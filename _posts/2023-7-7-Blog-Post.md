@@ -47,8 +47,6 @@ The inner pipe contains the working fluid and is made of STS304 with a length of
 
 In the PIP system leakage is not apparent on the outside because the outer pipe is made of metal.  However, in this experiment the outer pipe is made of acrylic that was transparent, isolates the external environment and inner pipes. The leakage situation can be observed from the outside. 
 
-[<img src="{{ site.baseurl }}/images/experiment apparatus.png"/>]({{ site.baseurl }}/)
-
 
 <div style="display: flex; justify-content: center;">
   <img src="{{ site.baseurl }}/images/experiment%20apparatus.png"/>{{ site.baseurl }}
@@ -64,8 +62,9 @@ DTS stands for Distributed Temperature Sensing. It is a technology that allows f
 The DTS system measured to analyze the temperature of three points, the leakage point and the surrounding two points at 0.5 m intervals. The DTS system for this experiment used the TS3000 FIBERPRO model.
 the temperature was measured by the amplitude changes of Raman scattering according to the temperature of the reflection point.
  
-[<img src="{{ site.baseurl }}/images/DTS.png"/>]({{ site.baseurl }}/)
-
+<div style="display: flex; justify-content: center;">
+  <img src="{{ site.baseurl }}/images/DTS.png"/>{{ site.baseurl }}
+</div>
 
 The laser pulse irradiates from the input point proceeds through the optical fiber, and the laser pulse backscattered inside the optical fiber is collected through the direction coupler. The measurement location can be determined by the return time of the laser pulse, and the measurement interval is determined according to the data processing time.
 
@@ -90,10 +89,10 @@ The laser pulse irradiates from the input point proceeds through the optical fib
     b.	R1(x-/x0) R2(x0/x+)
 	
     c.	Standard deviation between R1 & R2
-    
-   
-    
-    [<img src="{{ site.baseurl }}/images/Standard deviation.png"/>]({{ site.baseurl }}/)
+
+	<div style="display: flex; justify-content: center;">
+  		<img src="{{ site.baseurl }}/images/Standard%20deviation.png"/>{{ site.baseurl }}
+	</div>
 
 3.	The data converted from standard deviation using FFT.
 	
@@ -105,7 +104,9 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 
 6.	t-SNE
 
-[<img src="{{ site.baseurl }}/images/Data Flow DIagram.png"/>]({{ site.baseurl }}/)
+<div style="display: flex; justify-content: center;">
+	<img src="{{ site.baseurl }}/images/Data%20Flow%20DIagram.png"/>{{ site.baseurl }}
+</div>
 
 Data is split to 7 to 3, training and testing respectively. Then the 7 is then split to training and validation on this training to prevent overfitting of the parameters which is weights and the biases. While the testing (3) makes sure Hyper parameters (width, depth, batch size of epochs) don’t overfit.
 
@@ -127,8 +128,9 @@ Data is split to 7 to 3, training and testing respectively. Then the 7 is then s
 
 ## CNN
 
-[<img src="{{ site.baseurl }}/images/CNN Flow.png"/>]({{ site.baseurl }}/)
-
+<div style="display: flex; justify-content: center;">
+  <img src="{{ site.baseurl }}/images/CNN%20Flow.png"/>{{ site.baseurl }}
+</div>
 The process of the Convolutional Neural Network (CNN) is as follows:
  1. Input layer: The preprocessed temperature data is fed into the input layer of the CNN as a 2D image. 
 2. Convolutional layer: The input data is convolved with a set of learnable filters to extract features from the image. 
@@ -143,8 +145,9 @@ The process of the Convolutional Neural Network (CNN) is as follows:
 In summary, the CNN used in the experiment is a deep learning model that consists of multiple layers, including convolutional, pooling, fully connected, and softmax layers. The model is trained on preprocessed temperature data to classify the data as leakage or non-leakage with high accuracy.
  
 
-[<img src="{{ site.baseurl }}/images/CNN Diagram.png"/>]({{ site.baseurl }}/)
-
+<div style="display: flex; justify-content: center;">
+  <img src="{{ site.baseurl }}/images/CNN%20Diagram.png"/>{{ site.baseurl }}
+</div>
 ## Optimizers
 
 Used four different optimizers to optimize the performance of the Convolutional Neural Network (CNN) model. The optimizers used were ADADELTA, ADAGRAD, SGD, and ADAM.
@@ -159,14 +162,17 @@ Used four different optimizers to optimize the performance of the Convolutional 
 
 In the experiment, the ADAM optimizer was found to perform the best when combined with a learning rate of 0.0075. The choice of optimizer and learning rate can have a significant impact on the performance of the CNN model, and it is important to experiment with different combinations to find the optimal settings for a given dataset.
  
-[<img src="{{ site.baseurl }}/images/Optimizers Table.png"/>]({{ site.baseurl }}/)
 
+<div style="display: flex; justify-content: center;">
+  <img src="{{ site.baseurl }}/images/Optimizers%20Table.png"/>{{ site.baseurl }}
+</div>
 ## Learning rate
 
 The learning rate is a hyperparameter that controls the step size at which the model weights are updated during training. The learning rate was varied for the ADAM optimizer to optimize the performance of the Convolutional Neural Network (CNN) model. The learning rates tested were 0.0001, 0.01, and 0.0075. The results showed that a learning rate of 0.0075 produced the best performance in terms of accuracy and loss.
 
-[<img src="{{ site.baseurl }}/images/Learning Rate.png"/>]({{ site.baseurl }}/)
- 
+<div style="display: flex; justify-content: center;">
+  <img src="{{ site.baseurl }}/images/Learning%20Rate.png"/>{{ site.baseurl }}
+</div>
 To determine the best learning rate, training loss and validation loss were compared for different learning rates using the ADAM optimizer. The results showed that the training loss and validation loss tended to decrease as the learning rate increased up to a certain point, after which the loss started to increase again. This is because a high learning rate can cause the model to overshoot the optimal solution and diverge, while a low learning rate can cause the model to converge slowly or get stuck in a local minimum.
 
 The experiment also analyzed the performance of the CNN model under different conditions, such as the number of epochs and the type of optimizer used. The results showed that the ADAM optimizer outperformed the other optimizers tested (ADADELTA, ADAGRAD, and SGD) in terms of accuracy and loss. The experiment also found that the optimal number of epochs for the CNN model was 100.
