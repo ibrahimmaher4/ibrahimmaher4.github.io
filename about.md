@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am Ibrahim 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+This Blog post is for the Deep Learning Seminar
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[st186451@stud.uni-stuttgart.de](mailto:email@domain.com)
