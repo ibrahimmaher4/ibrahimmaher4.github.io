@@ -1,26 +1,13 @@
 ---
 layout: post
-title: You're up and running!
+title: Machine Learning-Based Leakage Detection For Pipe-In-Pipe System
 published: true
 ---
-Contents
-
-Method	1
-Experiment Apparatus	1
-Inner Pipe	2
-Outer Pipe	2
-DTS	2
-Data Flow	3
-CNN	4
-Optimizers	5
-Learning rate	6
 
 
 
 
-
-
-## Method
+## Motivation
 
 The method for detecting fluid leakage in a pipe-in-pipe system involves using distributed temperature sensing (DTS) to measure temperature data at various points within the system. Fourier transformed spectrogram data from DTS is then fed into a machine learning algorithm, specifically a convolutional neural network (CNN), which is trained to distinguish between leakage and non-leakage states. The optimized CNN model can detect small amounts of fluid leakage with high accuracy, even in the presence of temperature changes in the working fluid.
 
@@ -35,13 +22,16 @@ A 4:1 scale pipe-in-pipe (PIP) prototype system, which is used to simulate fluid
 
  
 The test section comprises an inner pipe, an outer pipe, a cartridge heater, a multipoint thermocouple, and a leakage simulator.
-Inner Pipe
+
+### Inner Pipe
 
 The inner pipe contains the working fluid and is made of STS304 with a length of 3 m. The cartridge heater has a power of 5 kW and is inserted at the center of the inner pipe to ensure that the water temperature remains constant. The water temperature is heated to a maximum of 90°C.
-Outer Pipe
+
+### Outer Pipe
 
 In the PIP system leakage is not apparent on the outside because the outer pipe is made of metal.  However, in this experiment the outer pipe is made of acrylic that was transparent, isolates the external environment and inner pipes. The leakage situation can be observed from the outside. 
 
+![experiment apparatus.png]({{site.baseurl}}/_posts/experiment apparatus.png)
 
 
 
@@ -55,6 +45,8 @@ DTS stands for Distributed Temperature Sensing. It is a technology that allows f
 The DTS system measured to analyze the temperature of three points, the leakage point and the surrounding two points at 0.5 m intervals. The DTS system for this experiment used the TS3000 FIBERPRO model.
 the temperature was measured by the amplitude changes of Raman scattering according to the temperature of the reflection point.
  
+ ![DTS.png]({{site.baseurl}}/_posts/DTS.png)
+
 
 The laser pulse irradiates from the input point proceeds through the optical fiber, and the laser pulse backscattered inside the optical fiber is collected through the direction coupler. The measurement location can be determined by the return time of the laser pulse, and the measurement interval is determined according to the data processing time.
 
@@ -72,14 +64,18 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 
 1.	Data Gathered in the Decoupler
 2.	Data goes to the Data Acquisition to be pre-processed.
-a.	Preprocessing of the data 3 temperatures (x-, x0, x+)
-b.	R1(x-/x0) R2(x0/x+)
-c.	Standard deviation between R1 & R2
+	a.	Preprocessing of the data 3 temperatures (x-, x0, x+)
+	b.	R1(x-/x0) R2(x0/x+)
+	c.	Standard deviation between R1 & R2
 3.	The data converted from standard deviation using FFT.
-a.	By dividing the pre-processed data in 300-s
+	a.	By dividing the pre-processed data in 300-s
 4.	FFT Data converted into 2D spectrograms.
 5.	Then CNN 7:3
 6.	t-SNE
+
+![Data Flow DIagram.png]({{site.baseurl}}/_posts/Data Flow DIagram.png)
+
+
 Data is split to 7 to 3, training and testing respectively. Then the 7 is then split to training and validation on this training to prevent overfitting of the parameters which is weights and the biases. While the testing (3) makes sure Hyper parameters (width, depth, batch size of epochs) don’t overfit.
 
 
@@ -100,6 +96,9 @@ Data is split to 7 to 3, training and testing respectively. Then the 7 is then s
 
 ## CNN
 
+![CNN Flow.png]({{site.baseurl}}/_posts/CNN Flow.png)
+
+
 The process of the Convolutional Neural Network (CNN) is as follows:
  1. Input layer: The preprocessed temperature data is fed into the input layer of the CNN as a 2D image. 
 2. Convolutional layer: The input data is convolved with a set of learnable filters to extract features from the image. 
@@ -113,6 +112,8 @@ The process of the Convolutional Neural Network (CNN) is as follows:
 10. Testing: CNN is tested on a set of unseen data to evaluate its performance. 
 In summary, the CNN used in the experiment is a deep learning model that consists of multiple layers, including convolutional, pooling, fully connected, and softmax layers. The model is trained on preprocessed temperature data to classify the data as leakage or non-leakage with high accuracy.
  
+![CNN Diagram.png]({{site.baseurl}}/_posts/CNN Diagram.png)
+
 
 ## Optimizers
 
@@ -128,12 +129,16 @@ Used four different optimizers to optimize the performance of the Convolutional 
 
 In the experiment, the ADAM optimizer was found to perform the best when combined with a learning rate of 0.0075. The choice of optimizer and learning rate can have a significant impact on the performance of the CNN model, and it is important to experiment with different combinations to find the optimal settings for a given dataset.
  
+![Optimizers Table.png]({{site.baseurl}}/_posts/Optimizers Table.png)
 
 
 
 ## Learning rate
 
 The learning rate is a hyperparameter that controls the step size at which the model weights are updated during training. The learning rate was varied for the ADAM optimizer to optimize the performance of the Convolutional Neural Network (CNN) model. The learning rates tested were 0.0001, 0.01, and 0.0075. The results showed that a learning rate of 0.0075 produced the best performance in terms of accuracy and loss.
+
+![Learning Rate.png]({{site.baseurl}}/_posts/Learning Rate.png)
+
  
 To determine the best learning rate, training loss and validation loss were compared for different learning rates using the ADAM optimizer. The results showed that the training loss and validation loss tended to decrease as the learning rate increased up to a certain point, after which the loss started to increase again. This is because a high learning rate can cause the model to overshoot the optimal solution and diverge, while a low learning rate can cause the model to converge slowly or get stuck in a local minimum.
 
