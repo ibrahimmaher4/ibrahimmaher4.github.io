@@ -119,20 +119,9 @@ Data is split to 7 to 3, training and testing respectively. Then the 7 is then s
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ## CNN
 
-<div style="display: flex; justify-content: center;">
+<div style="display: flex; justify-content: flex-end;">
   <img src="{{ site.baseurl }}/images/CNN%20Flow.png"/>{{ site.baseurl }}
 </div>
 The process of the Convolutional Neural Network (CNN) is as follows:
