@@ -38,7 +38,7 @@ In the PIP system leakage is not apparent on the outside because the outer pipe 
 
 ![experiment apparatus.png]({{site.baseurl}}/images/experiment%20apparatus.png)
 
-
+![experiment apparatus.png] https://github.com/ibrahimmaher4/ibrahimmaher4.github.io/blob/master/_posts/experiment%20apparatus.png?raw=true)
 
 
 
