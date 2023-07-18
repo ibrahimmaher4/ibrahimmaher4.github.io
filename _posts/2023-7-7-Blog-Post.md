@@ -7,9 +7,20 @@ published: true
 
 
 
+
+
+
+
 ## Motivation
 
 This Blog Post is to address the challenges of detecting fluid leakage in high risk industries, such as oil and gas, and propose a solution using advanced technologies such as distributed temperature sensing and machine learning. It aim's to provide a more accurate and efficient method for detecting fluid leakage in pipe-in-pipe structures, which can help prevent environmental damage and ensure safety in these industries.
+
+
+
+
+
+
+
 
 
 ## Method
@@ -68,14 +79,25 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 
 
 1.	Data Gathered in the Decoupler
+
 2.	Data goes to the Data Acquisition to be pre-processed.
-	a.	Preprocessing of the data 3 temperatures (x-, x0, x+)
-	b.	R1(x-/x0) R2(x0/x+)
-	c.	Standard deviation between R1 & R2
+	
+    a.	Preprocessing of the data 3 temperatures (x-, x0, x+)
+	
+    b.	R1(x-/x0) R2(x0/x+)
+	
+    c.	Standard deviation between R1 & R2
+    
+    ![Standard deviation.png]({{site.baseurl}}/https://github.com/ibrahimmaher4/ibrahimmaher4.github.io/blob/master/images/Standard%20deviation.png)
+
 3.	The data converted from standard deviation using FFT.
-	a.	By dividing the pre-processed data in 300-s
+	
+    a.	By dividing the pre-processed data in 300-s
+
 4.	FFT Data converted into 2D spectrograms.
+
 5.	Then CNN 7:3
+
 6.	t-SNE
 
 ![Data Flow DIagram.png]({{site.baseurl}}/_posts/Data Flow DIagram.png)
