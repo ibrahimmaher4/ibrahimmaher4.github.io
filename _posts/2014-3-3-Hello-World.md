@@ -7,7 +7,7 @@ published: true
 
 ## Motivation
 
-this Blog Post is to address the challenges of detecting fluid leakage in high risk industries, such as oil and gas, and propose a solution using advanced technologies such as distributed temperature sensing and machine learning. It aim's to provide a more accurate and efficient method for detecting fluid leakage in pipe-in-pipe structures, which can help prevent environmental damage and ensure safety in these industries.
+This Blog Post is to address the challenges of detecting fluid leakage in high risk industries, such as oil and gas, and propose a solution using advanced technologies such as distributed temperature sensing and machine learning. It aim's to provide a more accurate and efficient method for detecting fluid leakage in pipe-in-pipe structures, which can help prevent environmental damage and ensure safety in these industries.
 
 
 ## Method
