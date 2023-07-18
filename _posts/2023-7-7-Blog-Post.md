@@ -27,9 +27,9 @@ This Blog Post is to address the challenges of detecting fluid leakage in high r
 
 The method for detecting fluid leakage in a pipe-in-pipe system involves using distributed temperature sensing (DTS) to measure temperature data at various points within the system. Fourier transformed spectrogram data from DTS is then fed into a machine learning algorithm, specifically a convolutional neural network (CNN), which is trained to distinguish between leakage and non-leakage states. The optimized CNN model can detect small amounts of fluid leakage with high accuracy, even in the presence of temperature changes in the working fluid.
 
-
-
-
+<div style="display: flex; justify-content: center;">
+  <img src="{{ site.baseurl }}/images/Method.png"/>{{ site.baseurl }}
+</div>
 
 
 ## Experiment Apparatus
