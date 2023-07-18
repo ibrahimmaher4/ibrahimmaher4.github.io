@@ -58,9 +58,13 @@ In the PIP system leakage is not apparent on the outside because the outer pipe 
 
 ## DTS
 
-DTS stands for Distributed Temperature Sensing. It is a technology that allows for the measurement of temperature at various points along a fiber optic cable. This is achieved by sending a laser pulse through the cable and measuring the backscattered light, which is affected by temperature changes along the cable. DTS has advantages over traditional temperature sensors in that it can measure temperature at any point along the cable, is robust against external impact and high temperature, and can be installed relatively easily. DTS is used to measure temperature data within a pipe-in-pipe system for the purpose of detecting fluid leakage.
+DTS stands for **D**istributed **T**emperature **S**ensing. It is a technology that allows for the measurement of temperature at various points along a fiber optic cable. This is achieved by sending a laser pulse through the cable and measuring the backscattered light, which is affected by temperature changes along the cable. 
+
+DTS has advantages over traditional temperature sensors in that it can measure temperature at any point along the cable, is robust against external impact and high temperature, and can be installed relatively easily. DTS is used to measure temperature data within a pipe-in-pipe system for the purpose of detecting fluid leakage.
+
+
 The DTS system measured to analyze the temperature of three points, the leakage point and the surrounding two points at 0.5 m intervals. The DTS system for this experiment used the TS3000 FIBERPRO model.
-the temperature was measured by the amplitude changes of Raman scattering according to the temperature of the reflection point.
+The Temperature was measured by the amplitude changes of Raman scattering according to the temperature of the reflection point.
  
 <div style="display: flex; justify-content: center;">
   <img src="{{ site.baseurl }}/images/DTS.png"/>{{ site.baseurl }}
