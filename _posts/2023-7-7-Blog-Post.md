@@ -78,6 +78,13 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 
 
 ## Data Flow
+<div style="display: flex; justify-content: center;">
+	<img src="{{ site.baseurl }}/images/Data%20Flow%20DIagram.png"/>{{ site.baseurl }}
+</div>
+
+<div style="display: flex; justify-content: flex-end;">
+  <img src="{{ site.baseurl }}/images/Data%20Flow%20DIagram.png"/>
+</div>
 
 
 1.	Data Gathered in the Decoupler
@@ -104,9 +111,7 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 
 6.	t-SNE
 
-<div style="display: flex; justify-content: center;">
-	<img src="{{ site.baseurl }}/images/Data%20Flow%20DIagram.png"/>{{ site.baseurl }}
-</div>
+
 
 Data is split to 7 to 3, training and testing respectively. Then the 7 is then split to training and validation on this training to prevent overfitting of the parameters which is weights and the biases. While the testing (3) makes sure Hyper parameters (width, depth, batch size of epochs) don’t overfit.
 
