@@ -78,9 +78,6 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 
 
 ## Data Flow
-<div style="display: flex; justify-content: center;">
-	<img src="{{ site.baseurl }}/images/Data%20Flow%20DIagram.png"/>{{ site.baseurl }}
-</div>
 
 <div style="display: flex; justify-content: flex-end;">
   <img src="{{ site.baseurl }}/images/Data%20Flow%20DIagram.png"/>
