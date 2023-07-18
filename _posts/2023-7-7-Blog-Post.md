@@ -50,6 +50,10 @@ In the PIP system leakage is not apparent on the outside because the outer pipe 
 [<img src="{{ site.baseurl }}/images/experiment apparatus.png"/>]({{ site.baseurl }}/)
 
 
+<div style="display: flex; justify-content: center;">
+  [<img src="{{ site.baseurl }}/images/experiment%20apparatus.png"/>]({{ site.baseurl }}/)
+</div>
+
 
 
 
