@@ -136,16 +136,26 @@ Data is split to 7 to 3, training and testing respectively. Then the 7 is then s
   <img src="{{ site.baseurl }}/images/CNN%20Flow.png"/>{{ site.baseurl }}
 </div>
 The process of the Convolutional Neural Network (CNN) is as follows:
- 1. Input layer: The preprocessed temperature data is fed into the input layer of the CNN as a 2D image. 
+ 1. Input layer: The preprocessed temperature data is fed into the input layer of the CNN as a 2D image (Spectrograms). 
+ 
 2. Convolutional layer: The input data is convolved with a set of learnable filters to extract features from the image. 
-3. Activation function: An activation function is applied to the output of the convolutional layer to introduce non-linearity into the model. 
+
+3. Activation function: An activation function Cross-entropy is applied to the output of the convolutional layer to calculate the losses of the model. 
+
 4. Pooling layer/ Trans Layer: The output of the activation function is down sampled using a pooling layer to reduce the dimensionality of the data and make the model more computationally efficient. 
+
 5. Fully connected layer: The output of the pooling layer is flattened and fed into a fully connected layer, which is a traditional neural network layer that connects every neuron in one layer to every neuron in the next layer. 
+
 6. SoftMax layer: The output of the fully connected layer is fed into a SoftMax layer, which normalizes the output into a probability distribution over the two classes (leakage and non-leakage) . 
+
 7. Loss function: The cross-entropy loss function is used to measure the difference between the predicted probability distribution and the actual distribution. 
+
 8. Optimizer: An optimizer is used to minimize the loss function and update the weights of the model. 
+
 9. Training: The CNN is trained on a set of labeled data using backpropagation to adjust the weights of the model. 
+
 10. Testing: CNN is tested on a set of unseen data to evaluate its performance. 
+
 In summary, the CNN used in the experiment is a deep learning model that consists of multiple layers, including convolutional, pooling, fully connected, and softmax layers. The model is trained on preprocessed temperature data to classify the data as leakage or non-leakage with high accuracy.
  
 
