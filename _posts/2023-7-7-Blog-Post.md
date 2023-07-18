@@ -9,6 +9,11 @@ published: true
 
 ## Motivation
 
+This Blog Post is to address the challenges of detecting fluid leakage in high risk industries, such as oil and gas, and propose a solution using advanced technologies such as distributed temperature sensing and machine learning. It aim's to provide a more accurate and efficient method for detecting fluid leakage in pipe-in-pipe structures, which can help prevent environmental damage and ensure safety in these industries.
+
+
+## Method
+
 The method for detecting fluid leakage in a pipe-in-pipe system involves using distributed temperature sensing (DTS) to measure temperature data at various points within the system. Fourier transformed spectrogram data from DTS is then fed into a machine learning algorithm, specifically a convolutional neural network (CNN), which is trained to distinguish between leakage and non-leakage states. The optimized CNN model can detect small amounts of fluid leakage with high accuracy, even in the presence of temperature changes in the working fluid.
 
 
@@ -157,4 +162,3 @@ In addition, the experiment used t-SNE (t-Distributed Stochastic Neighbor Embedd
 ## References
 
 Hayeol Kim a, Jewhan Lee b, Taekyeong Kim a, Seong Jin Park d, Hyungmo Kimc,Im Doo Junga, Advanced thermal fluid leakage detection system with machine learning algorithm for pipe-in-pipe structure (2023), https://doi.org/10.1016/j.csite.2023.102747.
-
