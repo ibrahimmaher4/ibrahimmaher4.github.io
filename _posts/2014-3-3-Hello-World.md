@@ -34,9 +34,11 @@ The inner pipe contains the working fluid and is made of STS304 with a length of
 
 In the PIP system leakage is not apparent on the outside because the outer pipe is made of metal.  However, in this experiment the outer pipe is made of acrylic that was transparent, isolates the external environment and inner pipes. The leakage situation can be observed from the outside. 
 
-![experiment apparatus.png]({{site.baseurl}}/_posts/experiment apparatus.png)
+# ![experiment apparatus.png]({{site.baseurl}}/_posts/experiment apparatus.png)
 
-![experiment apparatus.png]
+
+
+[<img src="{{ site.baseurl }}/images/experiment apparatus.png" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;"/>]({{ site.baseurl }}/)
 
 
 
