@@ -38,7 +38,7 @@ In the PIP system leakage is not apparent on the outside because the outer pipe 
 
 
 
-[<img src="{{ site.baseurl }}/images/experiment apparatus.png" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;"/>]({{ site.baseurl }}/)
+[<img src="{{ site.baseurl }}/images/experiment apparatus.png" style="width: 400px;"/>]({{ site.baseurl }}/)
 
 
 
