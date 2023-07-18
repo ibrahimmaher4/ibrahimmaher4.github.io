@@ -89,6 +89,8 @@ The laser pulse irradiates from the input point proceeds through the optical fib
     c.	Standard deviation between R1 & R2
     
     ![Standard deviation.png](/https://github.com/ibrahimmaher4/ibrahimmaher4.github.io/blob/master/images/Standard%20deviation.png)
+    
+    [<img src="{{ site.baseurl }}/images/Standard deviation.png"/>]({{ site.baseurl }}/)
 
 3.	The data converted from standard deviation using FFT.
 	
