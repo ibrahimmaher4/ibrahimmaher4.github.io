@@ -56,14 +56,6 @@ In the PIP system leakage is not apparent on the outside because the outer pipe 
 </div>
 
 
-### Input
-
-The input to the CNN in this study is the spectrogram obtained from the temperature data of the inner pipe of the PIP system, which is generated using the standard deviation and Fast Fourier Transform (FFT) of the temperature data. The spectrogram is a three-tensor input that is used to classify the data as leakage or non-leakage through multiple layers of the CNN.
-
-### Output
-
-The output of the CNN in this study is a binary classification of the input data as either leakage or non-leakage. The fully-connected and softmax layers of the CNN are used to classify the input data based on the features extracted by the convolutional and pooling layers. The accuracy of the leakage detection is evaluated using the t-SNE algorithm. 
-
 
 ## DTS
 
@@ -156,6 +148,17 @@ Data is split to 7 to 3, training and testing respectively. Then the 7 is then s
 <div style="display: flex; justify-content: flex-end;">
   <img src="{{ site.baseurl }}/images/CNN%20Flow.png"/>{{ site.baseurl }}
 </div>
+
+### Input of CNN
+
+The input to the CNN is the spectrogram obtained from the temperature data of the inner pipe of the PIP system, which is generated using the standard deviation and Fast Fourier Transform (FFT) of the temperature data. The spectrogram is a three-tensor input that is used to classify the data as leakage or non-leakage through multiple layers of the CNN.
+
+### Output of CNN
+
+The output of the CNN in this study is a binary classification of the input data as either leakage or non-leakage. The fully-connected and softmax layers of the CNN are used to classify the input data based on the features extracted by the convolutional and pooling layers. The accuracy of the leakage detection is evaluated using the t-SNE algorithm. 
+
+
+
 The process of the Convolutional Neural Network (CNN) is as follows:
 1. **Input layer**: The preprocessed temperature data is fed into the input layer of the CNN as a 2D image (Spectrograms). 
  
@@ -183,6 +186,9 @@ In summary, the CNN used in the experiment is a deep learning model that consist
 <div style="display: flex; justify-content: center;">
   <img src="{{ site.baseurl }}/images/CNN%20Diagram.png"/>{{ site.baseurl }}
 </div>
+
+
+
 ## Optimizers
 
 Used four different optimizers to optimize the performance of the Convolutional Neural Network (CNN) model. The optimizers used were ADADELTA, ADAGRAD, SGD, and ADAM.
