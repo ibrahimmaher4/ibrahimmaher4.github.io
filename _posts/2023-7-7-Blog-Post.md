@@ -36,6 +36,9 @@ The method for detecting fluid leakage in a pipe-in-pipe system involves using d
 
 A 4:1 scale pipe-in-pipe (PIP) prototype system, which is used to simulate fluid leakage. The apparatus includes a metering pump for constant leakage of water, a test section where the leakage is simulated, and a distributed temperature sensing (DTS) system for leakage detection sensors.
 
+<div style="display: flex; justify-content: center;">
+  <img src="{{ site.baseurl }}/images/Experiment_Apparatus.png"/>{{ site.baseurl }}
+</div> 
  
 The test section comprises an inner pipe, an outer pipe, a cartridge heater, a multipoint thermocouple, and a leakage simulator.
 
@@ -59,6 +62,10 @@ In the PIP system leakage is not apparent on the outside because the outer pipe 
 ## DTS
 
 DTS stands for **D**istributed **T**emperature **S**ensing. It is a technology that allows for the measurement of temperature at various points along a fiber optic cable. This is achieved by sending a laser pulse through the cable and measuring the backscattered light, which is affected by temperature changes along the cable. 
+
+<div style="display: flex; justify-content: center;">
+  <img src="{{ site.baseurl }}/images/DTS1.png"/>{{ site.baseurl }}
+</div>
 
 DTS has advantages over traditional temperature sensors in that it can measure temperature at any point along the cable, is robust against external impact and high temperature, and can be installed relatively easily. DTS is used to measure temperature data within a pipe-in-pipe system for the purpose of detecting fluid leakage.
 
@@ -87,6 +94,16 @@ The laser pulse irradiates from the input point proceeds through the optical fib
   <img src="{{ site.baseurl }}/images/Data%20Flow%20DIagram.png"/>
 </div>
 
+### Generaly
+
+1. Data is Preprocessed
+2. Data is Converted using Fast Fourier Transform
+3. Data is Converted to Spectrograms to be fed in the CNN
+
+<div style="display: flex; justify-content: center;">
+  	<img src="{{ site.baseurl }}/images/DataF.png"/>{{ site.baseurl }}
+</div>
+
 
 1.	Data Gathered in the Decoupler
 
@@ -111,9 +128,9 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 5.	Then CNN 7:3
 
 6.	t-SNE
-
-	<div style="display: flex; justify-content: center;">
-  		<img src="{{ site.baseurl }}/images/DataF.png"/>{{ site.baseurl }}
+    
+    <div style="display: flex; justify-content: center;">
+  		<img src="{{ site.baseurl }}/images/Spectrograms.png"/>{{ site.baseurl }}
 	</div>
 
 Data is split to 7 to 3, training and testing respectively. Then the 7 is then split to training and validation on this training to prevent overfitting of the parameters which is weights and the biases. While the testing (3) makes sure Hyper parameters (width, depth, batch size of epochs) don’t overfit.
@@ -178,13 +195,17 @@ In the experiment, the ADAM optimizer was found to perform the best when combine
 The learning rate is a hyperparameter that controls the step size at which the model weights are updated during training. The learning rate was varied for the ADAM optimizer to optimize the performance of the Convolutional Neural Network (CNN) model. The learning rates tested were 0.0001, 0.01, and 0.0075. The results showed that a learning rate of 0.0075 produced the best performance in terms of accuracy and loss.
 
 <div style="display: flex; justify-content: center;">
-  <img src="{{ site.baseurl }}/images/Learning%20Rate.png"/>{{ site.baseurl }}
+  <img src="{{ site.baseurl }}/images/LearningrateT.png"/>{{ site.baseurl }}
 </div>
 To determine the best learning rate, training loss and validation loss were compared for different learning rates using the ADAM optimizer. The results showed that the training loss and validation loss tended to decrease as the learning rate increased up to a certain point, after which the loss started to increase again. This is because a high learning rate can cause the model to overshoot the optimal solution and diverge, while a low learning rate can cause the model to converge slowly or get stuck in a local minimum.
 
 The experiment also analyzed the performance of the CNN model under different conditions, such as the number of epochs and the type of optimizer used. The results showed that the ADAM optimizer outperformed the other optimizers tested (ADADELTA, ADAGRAD, and SGD) in terms of accuracy and loss. The experiment also found that the optimal number of epochs for the CNN model was 100.
 
 In addition, the experiment used t-SNE (t-Distributed Stochastic Neighbor Embedding) to visualize the CNN result data and classify the leakage and non-leakage states based on an epoch increase of the ADAM optimizer with 0.0075 learning rate. The visualization showed that the CNN model was able to classify the datasets with increasing epochs.
+
+<div style="display: flex; justify-content: center;">
+  <img src="{{ site.baseurl }}/images/LearningrateG.png"/>{{ site.baseurl }}
+</div>
 
  Overall, the Experiment demonstrated that the choice of optimizer and learning rate can have a significant impact on the performance of the CNN model. It is important to experiment with different combinations of hyperparameters to find the optimal settings for a given dataset and model architecture.
 
