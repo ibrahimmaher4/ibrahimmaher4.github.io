@@ -201,12 +201,18 @@ Used four different optimizers to optimize the performance of the Convolutional 
 
 4. ADAM: This optimizer combines the advantages of both AdaGrad and RMSProp optimizers. It uses adaptive learning rates for each parameter and maintains a moving average of the first and second moments of the gradients. This optimizer is computationally efficient and has been shown to converge faster than other optimizers.
 
+<div style="display: flex; justify-content: center;">
+  <img src="{{ site.baseurl }}/images/OptimizersT.png"/>{{ site.baseurl }}
+</div>
+
 In the experiment, the ADAM optimizer was found to perform the best when combined with a learning rate of 0.0075. The choice of optimizer and learning rate can have a significant impact on the performance of the CNN model, and it is important to experiment with different combinations to find the optimal settings for a given dataset.
  
 
 <div style="display: flex; justify-content: center;">
-  <img src="{{ site.baseurl }}/images/Optimizers%20Table.png"/>{{ site.baseurl }}
+  <img src="{{ site.baseurl }}/images/OptimizersG.png"/>{{ site.baseurl }}
 </div>
+
+
 ## Learning rate
 
 The learning rate is a hyperparameter that controls the step size at which the model weights are updated during training. The learning rate was varied for the ADAM optimizer to optimize the performance of the Convolutional Neural Network (CNN) model. The learning rates tested were 0.0001, 0.01, and 0.0075. The results showed that a learning rate of 0.0075 produced the best performance in terms of accuracy and loss.
