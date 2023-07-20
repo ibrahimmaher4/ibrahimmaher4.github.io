@@ -157,7 +157,7 @@ The input to the CNN is the spectrogram obtained from the temperature data of th
 
 The output of the CNN in this study is a binary classification of the input data as either leakage or non-leakage. The fully-connected and softmax layers of the CNN are used to classify the input data based on the features extracted by the convolutional and pooling layers. The accuracy of the leakage detection is evaluated using the t-SNE algorithm. 
 
-
+## Process
 
 The process of the Convolutional Neural Network (CNN) is as follows:
 1. **Input layer**: The preprocessed temperature data is fed into the input layer of the CNN as a 2D image (Spectrograms). 
