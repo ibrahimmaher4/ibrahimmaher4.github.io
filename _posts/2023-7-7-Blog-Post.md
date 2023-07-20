@@ -56,7 +56,13 @@ In the PIP system leakage is not apparent on the outside because the outer pipe 
 </div>
 
 
+### Input
 
+The input to the CNN in this study is the spectrogram obtained from the temperature data of the inner pipe of the PIP system, which is generated using the standard deviation and Fast Fourier Transform (FFT) of the temperature data. The spectrogram is a three-tensor input that is used to classify the data as leakage or non-leakage through multiple layers of the CNN.
+
+### Output
+
+The output of the CNN in this study is a binary classification of the input data as either leakage or non-leakage. The fully-connected and softmax layers of the CNN are used to classify the input data based on the features extracted by the convolutional and pooling layers. The accuracy of the leakage detection is evaluated using the t-SNE algorithm. 
 
 
 ## DTS
@@ -97,12 +103,17 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 ### Generaly
 
 1. Data is Preprocessed
+
 2. Data is Converted using Fast Fourier Transform
+
 3. Data is Converted to Spectrograms to be fed in the CNN
 
 <div style="display: flex; justify-content: center;">
   	<img src="{{ site.baseurl }}/images/DataF.png"/>{{ site.baseurl }}
 </div>
+
+
+### Full Data FLow 
 
 
 1.	Data Gathered in the Decoupler
@@ -199,12 +210,16 @@ The learning rate is a hyperparameter that controls the step size at which the m
 </div>
 To determine the best learning rate, training loss and validation loss were compared for different learning rates using the ADAM optimizer. The results showed that the training loss and validation loss tended to decrease as the learning rate increased up to a certain point, after which the loss started to increase again. This is because a high learning rate can cause the model to overshoot the optimal solution and diverge, while a low learning rate can cause the model to converge slowly or get stuck in a local minimum.
 
+<div style="display: flex; justify-content: center;">
+  <img src="{{ site.baseurl }}/images/LearningrateG.png"/>{{ site.baseurl }}
+</div>
+
 The experiment also analyzed the performance of the CNN model under different conditions, such as the number of epochs and the type of optimizer used. The results showed that the ADAM optimizer outperformed the other optimizers tested (ADADELTA, ADAGRAD, and SGD) in terms of accuracy and loss. The experiment also found that the optimal number of epochs for the CNN model was 100.
 
 In addition, the experiment used t-SNE (t-Distributed Stochastic Neighbor Embedding) to visualize the CNN result data and classify the leakage and non-leakage states based on an epoch increase of the ADAM optimizer with 0.0075 learning rate. The visualization showed that the CNN model was able to classify the datasets with increasing epochs.
 
 <div style="display: flex; justify-content: center;">
-  <img src="{{ site.baseurl }}/images/LearningrateG.png"/>{{ site.baseurl }}
+  <img src="{{ site.baseurl }}/images/T-sne.png"/>{{ site.baseurl }}
 </div>
 
  Overall, the Experiment demonstrated that the choice of optimizer and learning rate can have a significant impact on the performance of the CNN model. It is important to experiment with different combinations of hyperparameters to find the optimal settings for a given dataset and model architecture.
