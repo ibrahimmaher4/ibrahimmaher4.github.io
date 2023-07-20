@@ -231,7 +231,9 @@ In addition, the experiment used t-SNE (t-Distributed Stochastic Neighbor Embedd
  Overall, the Experiment demonstrated that the choice of optimizer and learning rate can have a significant impact on the performance of the CNN model. It is important to experiment with different combinations of hyperparameters to find the optimal settings for a given dataset and model architecture.
 
 
+## Conclusion
 
+The Paper discussed an advanced thermal fluid leakage detection system that uses distributed temperature sensing and machine learning algorithms to provide a more accurate and efficient method for detecting fluid leakage in pipe-in-pipe structures. The proposed system uses a CNN to classify the temperature data obtained from the inner pipe of the PIP system as either leakage or non-leakage. The Experiment was optimized by comparing four optimizers and eight learning rates and visualized the optimized CNN model result in three dimensions through the t-SNE algorithm. The proposed system has the potential to significantly improve safety and prevent environmental damage in high-risk industries such as oil and gas.
 
  
 
