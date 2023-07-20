@@ -205,7 +205,10 @@ Used four different optimizers to optimize the performance of the Convolutional 
   <img src="{{ site.baseurl }}/images/OptimizersT.png"/>{{ site.baseurl }}
 </div>
 
+
 In the experiment, the ADAM optimizer was found to perform the best when combined with a learning rate of 0.0075. The choice of optimizer and learning rate can have a significant impact on the performance of the CNN model, and it is important to experiment with different combinations to find the optimal settings for a given dataset.
+
+If the difference between the test set and the training set is high so the model may overfit to the training set and fail to generalize to new data, leading to reduced accuracy and biased predictions. On the other hand if it is low the model may memorize patterns specific to the test data, resulting in optimistic performance estimates but poor generalization to new data.
  
 
 <div style="display: flex; justify-content: center;">
