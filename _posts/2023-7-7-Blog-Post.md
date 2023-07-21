@@ -150,19 +150,6 @@ Data is split to 7 to 3, training and testing respectively. Then the 7 is then s
 </div>
 
 
-
-<div class="container">
-  <div class="image-container">
-    <img src="{{ site.baseurl }}/images/CNN%20Flow.png" alt="CNN Flow" />
-  </div>
-  <div class="text-container">
-    <h2>CNN</h2>
-    <p>Your CNN description goes here.</p>
-  </div>
-</div>
-
-
-
 ### Input of CNN
 
 The input to the CNN is the spectrogram obtained from the temperature data of the inner pipe of the PIP system, which is generated using the standard deviation and Fast Fourier Transform (FFT) of the temperature data. The spectrogram is a three-tensor input that is used to classify the data as leakage or non-leakage through multiple layers of the CNN.
