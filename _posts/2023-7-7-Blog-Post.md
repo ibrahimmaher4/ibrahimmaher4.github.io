@@ -194,12 +194,15 @@ The process of the Convolutional Neural Network (CNN) is as follows:
 
 10. **Testing**: CNN is tested on a set of unseen data to evaluate its performance. 
 
-In summary, the CNN used in the experiment is a deep learning model that consists of multiple layers, including convolutional, pooling, fully connected, and softmax layers. The model is trained on preprocessed temperature data to classify the data as leakage or non-leakage with high accuracy.
- 
 
 <div style="display: flex; justify-content: center;">
   <img src="{{ site.baseurl }}/images/CNN%20Diagram.png"/>{{ site.baseurl }}
 </div>
+
+
+In summary, the CNN used in the experiment is a deep learning model that consists of multiple layers, including convolutional, pooling, fully connected, and softmax layers. The model is trained on preprocessed temperature data to classify the data as leakage or non-leakage with high accuracy.
+ 
+
 
 
 
