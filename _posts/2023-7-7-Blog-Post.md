@@ -68,7 +68,7 @@ DTS stands for **D**istributed **T**emperature **S**ensing. It is a technology t
 DTS has advantages over traditional temperature sensors in that it can measure temperature at any point along the cable, is robust against external impact and high temperature, and can be installed relatively easily. DTS is used to measure temperature data within a pipe-in-pipe system for the purpose of detecting fluid leakage.
 
 
-The DTS system measured to analyze the temperature of three points, the leakage point and the surrounding two points at 0.5 m intervals. The DTS system for this experiment used the TS3000 FIBERPRO model.
+The DTS system measured to analyze the temperature of **three points**, the **leakage point** and the **surrounding two points at 0.5 m intervals**. The DTS system for this experiment used the TS3000 FIBERPRO model.
 The Temperature was measured by the amplitude changes of Raman scattering according to the temperature of the reflection point.
  
 <div style="display: flex; justify-content: center;">
@@ -108,9 +108,9 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 ### Full Data FLow 
 
 
-1.	Data Gathered in the Decoupler
+1.	Data Gathered as Raw Data in the Decoupler
 
-2.	Data goes to the Data Acquisition to be pre-processed.
+2.	DTS temperature Data goes to the Data Acquisition to be pre-processed.
 	
     a.	Preprocessing of the data 3 temperatures (x-, x0, x+)
 	
@@ -127,13 +127,16 @@ The laser pulse irradiates from the input point proceeds through the optical fib
     a.	By dividing the pre-processed data in 300-s
 
 4.	FFT Data converted into 2D spectrograms.
+	<div style="display: flex; justify-content: center;">
+  		<img src="{{ site.baseurl }}/images/Spectrograms.png"/>{{ site.baseurl }}
+	</div>
 
 5.	Then CNN 7:3
 
 6.	t-SNE
     
     <div style="display: flex; justify-content: center;">
-  		<img src="{{ site.baseurl }}/images/Spectrograms.png"/>{{ site.baseurl }}
+  		<img src="{{ site.baseurl }}/images/T-sne.png"/>{{ site.baseurl }}
 	</div>
 
 Data is split to 7 to 3, training and testing respectively. Then the 7 is then split to training and validation on this training to prevent overfitting of the parameters which is weights and the biases. While the testing (3) makes sure Hyper parameters (width, depth, batch size of epochs) don’t overfit.
@@ -152,11 +155,11 @@ Data is split to 7 to 3, training and testing respectively. Then the 7 is then s
 
 ### Input of CNN
 
-The input to the CNN is the spectrogram obtained from the temperature data of the inner pipe of the PIP system, which is generated using the standard deviation and Fast Fourier Transform (FFT) of the temperature data. The spectrogram is a three-tensor input that is used to classify the data as leakage or non-leakage through multiple layers of the CNN.
+The input to the CNN is the spectrogram obtained from the **temperature data** of the inner pipe of the PIP system, which is generated using the standard deviation and Fast Fourier Transform (FFT) of the temperature data. The spectrogram is a three-tensor input that is used to classify the data as leakage or non-leakage through multiple layers of the CNN.
 
 ### Output of CNN
 
-The output of the CNN in this study is a binary classification of the input data as either leakage or non-leakage. The fully-connected and softmax layers of the CNN are used to classify the input data based on the features extracted by the convolutional and pooling layers. The accuracy of the leakage detection is evaluated using the t-SNE algorithm. 
+The output of the CNN in this study is a **binary classification of the input data as either leakage or non-leakage**. The fully-connected and softmax layers of the CNN are used to classify the input data based on the features extracted by the convolutional and pooling layers. The accuracy of the leakage detection is evaluated using the t-SNE algorithm. 
 
 ## Process
 
