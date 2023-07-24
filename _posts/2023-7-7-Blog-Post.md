@@ -105,7 +105,7 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 </div>
 
 
-### Full Data FLow 
+### Full Data Flow 
 
 
 1.	Data Gathered as Raw Data in the Decoupler
