@@ -162,7 +162,7 @@ The data flow in this experiment involves the use of distributed temperature sen
 
     
 	
-    c.	Standard deviation between R1 & R2
+    c.	The standard deviation of the difference between R2 and R1 was calculated to generate one-point data.
     
 	<div style="text-align: center;">
   		<div style="display: flex; justify-content: center;">
