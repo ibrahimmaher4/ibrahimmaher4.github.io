@@ -18,6 +18,10 @@ This Blog Post is to address the challenges of detecting fluid leakage in high r
 
 
 
+## Problem
+
+The main problem is the difficulty of detecting fluid leakage in pipe-in-pipe systems, which are commonly used in high risk industries such as oil and gas drilling, nuclear power plants, and chemical plants. The opacity of the outer pipe makes it challenging to detect small leakages, which can lead to high risk of explosion or fire. The proposed solution using distributed temperature sensing and machine learning aims to address this problem by accurately detecting even small amounts of fluid leakage and locating the leakage point.
+
 
 
 
@@ -29,6 +33,13 @@ The method for detecting fluid leakage in a pipe-in-pipe system involves using d
 
 <div style="display: flex; justify-content: center;">
   <img src="{{ site.baseurl }}/images/Method.png"/>{{ site.baseurl }}
+</div>
+
+<div style="text-align: center;">
+  <div style="display: flex; justify-content: center;">
+    <img src="{{ site.baseurl }}/images/Method.png" alt="Image Description" />
+  </div>
+  <p>Data preprocessing, CNN analysis, and leakage detection process.</p>
 </div>
 
 
