@@ -149,12 +149,7 @@ The data flow in this experiment involves the use of distributed temperature sen
 	
     a.	Preprocessing of the data 3 temperatures (X-, X0, X+ )
 	
-    b.		<div style="text-align: center;">
-  				<div style="display: flex; justify-content: center;">
-    				<img src="{{ site.baseurl }}/images/Equation.png"/>{{ site.baseurl }}
-  				</div>
-  				<p>Equation. 1. Preprocessing Temperatures of DTS.</p>
-			</div>	
+    b.		
             
 <div style="text-align: center;">
   <div style="display: flex; justify-content: center;">
