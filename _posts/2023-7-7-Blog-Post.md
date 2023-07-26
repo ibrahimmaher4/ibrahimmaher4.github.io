@@ -147,9 +147,15 @@ The data flow in this experiment involves the use of distributed temperature sen
 
 2.	DTS temperature Data goes to the Data Acquisition to be pre-processed.
 	
-    a.	Preprocessing of the data 3 temperatures (x-, x0, x+)
+    a.	Preprocessing of the data 3 temperatures (X-, X0, X+ )
 	
-    b.	R1(x-/x0) R2(x0/x+) // R1=(X-)/X_0   ,R2=  X_0/(X+)
+    b.	<div style="text-align: center;">
+  			<div style="display: flex; justify-content: center;">
+    			<img src="{{ site.baseurl }}/images/Equation.png"/>{{ site.baseurl }}
+  			</div>
+  			<p>Equation. 1. Preprocessing Temperatures of DTS.</p>
+		</div>	
+    
 	
     c.	Standard deviation between R1 & R2
     
