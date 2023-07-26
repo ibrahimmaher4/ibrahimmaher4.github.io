@@ -113,15 +113,16 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 
 ## Data Flow
 
-
-The data flow in this experiment involves the use of distributed temperature sensing (DTS) to obtain temperature data from the pipe-in-pipe (PIP) system. The data flow involves the acquisition of temperature data from the PIP system using DTS, preprocessing and conversion of the data into a 2D image using FFT and spectrogram conversion, classification of the data as leakage or non-leakage using a CNN algorithm, and deployment of the system for autonomous leakage detection in safety-critical industrial systems.The CNN training and test sets are used for learning at a ratio of 7:3.
-
 <div style="text-align: right;">
   <div style="display: flex; justify-content: flex-end;">
     <img src="{{ site.baseurl }}/images/Data%20Flow%20DIagram.png"/>
   </div>
   <p>Fig. 6. Overall data preprocessing</p>
 </div>
+
+The data flow in this experiment involves the use of distributed temperature sensing (DTS) to obtain temperature data from the pipe-in-pipe (PIP) system. The data flow involves the acquisition of temperature data from the PIP system using DTS, preprocessing and conversion of the data into a 2D image using FFT and spectrogram conversion, classification of the data as leakage or non-leakage using a CNN algorithm, and deployment of the system for autonomous leakage detection in safety-critical industrial systems.The CNN training and test sets are used for learning at a ratio of 7:3.
+
+
 
 ### Generaly
 
