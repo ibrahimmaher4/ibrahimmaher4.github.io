@@ -120,7 +120,7 @@ The laser pulse irradiates from the input point proceeds through the optical fib
   <p>Fig. 6. Overall data preprocessing</p>
 </div>
 
-The data flow in this experiment involves the use of distributed temperature sensing (DTS) to obtain temperature data from the pipe-in-pipe (PIP) system. The data flow involves the acquisition of temperature data from the PIP system using DTS, preprocessing and conversion of the data into a 2D image using FFT and spectrogram conversion, classification of the data as leakage or non-leakage using a CNN algorithm, and deployment of the system for autonomous leakage detection in safety-critical industrial systems.The CNN training and test sets are used for learning at a ratio of 7:3.
+The data flow in this experiment involves the use of distributed temperature sensing (DTS) to obtain temperature data from the pipe-in-pipe (PIP) system. The data flow involves the acquisition of temperature data from the PIP system using DTS, preprocessing and conversion of the data into a 2D image using FFT and spectrogram conversion, classification of the data as leakage or non-leakage using a CNN algorithm, and deployment of the system for autonomous leakage detection in safety-critical industrial systems.
 
 
 
@@ -192,9 +192,9 @@ The data flow in this experiment involves the use of distributed temperature sen
   		<p>Fig. 9. Spectrogram of Leakage and Non-Leakage Data. Top 8 Spectrograms of leakage data. Bottom 8 Spectrograms of non-leakage data.</p>
 	</div>	
 
-5.	Then CNN 7:3
+5.	The CNN training and test sets are used for learning at a ratio of 7:3.
 
-6.	t-SNE
+6.	The t-SNE algorithm was used in the output of the proposed system to visualize the CNN 			classification results of leakage and non-leakage data points in a 3D space as the epoch 		increases. t-SNE is a machine learning algorithm used for data visualization and 				dimensionality reduction. 
     
     
     <div style="text-align: center;">
