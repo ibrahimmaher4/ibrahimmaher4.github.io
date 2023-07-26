@@ -147,7 +147,7 @@ The data flow in this experiment involves the use of distributed temperature sen
 
 2.	DTS temperature Data goes to the Data Acquisition to be pre-processed.
 	
-    a.	Preprocessing of the data 3 temperatures (X-, X0, X+ )
+    a.	Preprocessing of the 3 temperatures (X-, X0, X+ )
 	
     b.		
             
