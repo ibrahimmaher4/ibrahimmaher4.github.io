@@ -175,6 +175,10 @@ The data flow in this experiment involves the use of distributed temperature sen
     
     
     
+    
+    
+    
+    
 3.	The data converted from standard deviation using FFT.
 	
     a.	By dividing the pre-processed data in 300-s
