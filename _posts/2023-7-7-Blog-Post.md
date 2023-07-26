@@ -69,7 +69,7 @@ In the PIP system leakage is not apparent on the outside because the outer pipe 
   <div style="display: flex; justify-content: center;">
     <img src="{{ site.baseurl }}/images/experiment%20apparatus.png"/>{{ site.baseurl }}
   </div>
-  <p>Fig. 3. Schematic of experi- mental apparatus and leakage simulation.</p>
+  <p>Fig. 3. Schematic of experimental apparatus and leakage simulation.</p>
 </div>
 
 
@@ -113,8 +113,9 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 
 ## Data Flow
 
+The data flow in this experiment involves the use of distributed temperature sensing (DTS) to obtain temperature data from the pipe-in-pipe (PIP) system. The temperature data is then preprocessed and converted into a 2D image using fast Fourier transform (FFT) and spectrogram conversion. The preprocessed data is then classified as leakage or non-leakage using a convolutional neural network (CNN) algorithm. The CNN training and test sets are used for learning at a ratio of 7:3. The system is able to detect even small amounts of fluid leakage between the inner and outer pipe with an accuracy of 91.67%. This system can be deployed in safety-critical industrial systems for autonomous leakage detection.
 
-<div style="text-align: center;">
+<div style="text-align: flex-end;">
   <div style="display: flex; justify-content: flex-end;">
     <img src="{{ site.baseurl }}/images/Data%20Flow%20DIagram.png"/>
   </div>
@@ -155,7 +156,7 @@ The laser pulse irradiates from the input point proceeds through the optical fib
   		<div style="display: flex; justify-content: center;">
     		<img src="{{ site.baseurl }}/images/Standard%20deviation.png"/>{{ site.baseurl }}
   		</div>
-  		<p>Fig. 8. Data processing and CNN analysis structure graph.</p>
+  		<p>Fig. 8. DTS measured data preprocessing process graph.</p>
 	</div>	
     
     
@@ -170,7 +171,7 @@ The laser pulse irradiates from the input point proceeds through the optical fib
   		<div style="display: flex; justify-content: center;">
     		<img src="{{ site.baseurl }}/images/Spectrograms.png"/>{{ site.baseurl }}
   		</div>
-  		<p>Fig. 9. Spectrogram of Leakage and Non-Leakage Data. (A) Spectrogram of leakage data. (B) Spectrogram of non-leakage data.</p>
+  		<p>Fig. 9. Spectrogram of Leakage and Non-Leakage Data. Top 8 Spectrograms of leakage data. Bottom 8 Spectrograms of non-leakage data.</p>
 	</div>	
 
 5.	Then CNN 7:3
@@ -194,7 +195,7 @@ Data is split to 7 to 3, training and testing respectively. Then the 7 is then s
 
 ## CNN
 
-<div style="text-align: center;">
+<div style="text-align: flex-end;">
   <div style="display: flex; justify-content: flex-end;">
     <img src="{{ site.baseurl }}/images/CNN%20Flow.png"/>{{ site.baseurl }}
   </div>
