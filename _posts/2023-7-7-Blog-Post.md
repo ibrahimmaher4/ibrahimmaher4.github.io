@@ -340,9 +340,7 @@ In addition, the experiment used t-SNE (t-Distributed Stochastic Neighbor Embedd
 
 ## Conclusion
 
-The temperature around the inner pipe of the PIP was measured under various conditions that leakage water temperature from 35 ◦C to 90 ◦C and a leakage rate of 0.3–7 ml/min. The CNN leakage detection system distinguished the leakage with an accuracy of 91.67%. In addition, leakage could effectively be detected, although the operating temperature of the PIP system kept changing.
-
-The Paper discussed an advanced thermal fluid leakage detection system that uses distributed temperature sensing and machine learning algorithms to provide a more accurate and efficient method for detecting fluid leakage in pipe-in-pipe structures. The proposed system uses a CNN to classify the temperature data obtained from the inner pipe of the PIP system as either leakage or non-leakage. The Experiment was optimized by comparing four optimizers and eight learning rates and visualized the optimized CNN model result in three dimensions through the t-SNE algorithm. The proposed system has the potential to significantly improve safety and prevent environmental damage in high-risk industries such as oil and gas.
+The Paper discussed an advanced thermal fluid leakage detection system that uses distributed temperature sensing and machine learning algorithms to provide a more accurate and efficient method for detecting fluid leakage in pipe-in-pipe structures. The proposed system uses a CNN to classify the temperature data obtained from the inner pipe of the PIP system as either leakage or non-leakage.The Experiment was optimized by comparing four optimizers and eight learning rates and visualized the optimized CNN model result in three dimensions through the t-SNE algorithm. The CNN leakage detection system distinguished the leakage with an accuracy of 91.67%. The proposed system has the potential to significantly improve safety and prevent environmental damage in high-risk industries such as oil and gas.
 
  
 
