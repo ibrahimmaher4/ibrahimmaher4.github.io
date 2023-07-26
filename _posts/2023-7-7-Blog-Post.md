@@ -116,7 +116,7 @@ The laser pulse irradiates from the input point proceeds through the optical fib
 
 The data flow in this experiment involves the use of distributed temperature sensing (DTS) to obtain temperature data from the pipe-in-pipe (PIP) system. The data flow involves the acquisition of temperature data from the PIP system using DTS, preprocessing and conversion of the data into a 2D image using FFT and spectrogram conversion, classification of the data as leakage or non-leakage using a CNN algorithm, and deployment of the system for autonomous leakage detection in safety-critical industrial systems.The CNN training and test sets are used for learning at a ratio of 7:3.
 
-<div style="text-align: flex-end;">
+<div style="text-align: right;">
   <div style="display: flex; justify-content: flex-end;">
     <img src="{{ site.baseurl }}/images/Data%20Flow%20DIagram.png"/>
   </div>
@@ -149,7 +149,7 @@ The data flow in this experiment involves the use of distributed temperature sen
 	
     a.	Preprocessing of the data 3 temperatures (x-, x0, x+)
 	
-    b.	R1(x-/x0) R2(x0/x+)
+    b.	R1(x-/x0) R2(x0/x+) // R1=(X-)/X_0   ,R2=  X_0/(X+)
 	
     c.	Standard deviation between R1 & R2
     
@@ -319,6 +319,8 @@ In addition, the experiment used t-SNE (t-Distributed Stochastic Neighbor Embedd
 
 
 ## Conclusion
+
+The temperature around the inner pipe of the PIP was measured under various conditions that leakage water temperature from 35 ◦C to 90 ◦C and a leakage rate of 0.3–7 ml/min. The CNN leakage detection system distinguished the leakage with an accuracy of 91.67%. In addition, leakage could effectively be detected, although the operating temperature of the PIP system kept changing.
 
 The Paper discussed an advanced thermal fluid leakage detection system that uses distributed temperature sensing and machine learning algorithms to provide a more accurate and efficient method for detecting fluid leakage in pipe-in-pipe structures. The proposed system uses a CNN to classify the temperature data obtained from the inner pipe of the PIP system as either leakage or non-leakage. The Experiment was optimized by comparing four optimizers and eight learning rates and visualized the optimized CNN model result in three dimensions through the t-SNE algorithm. The proposed system has the potential to significantly improve safety and prevent environmental damage in high-risk industries such as oil and gas.
 
