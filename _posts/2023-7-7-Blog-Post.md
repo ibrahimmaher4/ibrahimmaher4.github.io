@@ -151,12 +151,12 @@ The data flow in this experiment involves the use of distributed temperature sen
 	
     b.		
             
-<div style="text-align: center;">
-  <div style="display: flex; justify-content: center;">
-    <img src="{{ site.baseurl }}/images/Equation.png" width="50%" height="50%" alt="Image Description" />
-  </div>
-  <p>Equation. 1. Preprocessing Temperatures of DTS.</p>
-</div>
+	<div style="text-align: center;">
+	  	<div style="display: flex; justify-content: center;">
+   		 <img src="{{ site.baseurl }}/images/Equation.png" width="50%" height="50%" alt="Image 				Description" />
+  	 	</div>
+  		<p>Equation. 1. Preprocessing Temperatures of DTS.</p>
+	</div>
 
 
     
