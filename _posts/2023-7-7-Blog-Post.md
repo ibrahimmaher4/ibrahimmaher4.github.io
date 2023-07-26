@@ -196,7 +196,7 @@ Data is split to 7 to 3, training and testing respectively. Then the 7 is then s
 
 ## CNN
 
-<div style="text-align: left;">
+<div style="text-align: right;">
   <div style="display: flex; justify-content: flex-end;">
     <img src="{{ site.baseurl }}/images/CNN%20Flow.png"/>{{ site.baseurl }}
   </div>
