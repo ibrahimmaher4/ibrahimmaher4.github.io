@@ -171,7 +171,7 @@ The data flow in this experiment involves the use of distributed temperature sen
   		<p>Fig. 8. DTS measured data preprocessing process graph.</p>
 	</div>	
     
-    In this Figure 8 In step 2 a,b,c are rows 1,2,3 respectively
+    In this Figure 8 In the Full data flow (step 2  a,b,c) are rows (1,2,3) respectively
     
     
     
