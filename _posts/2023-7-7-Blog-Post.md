@@ -204,6 +204,9 @@ The data flow in this experiment involves the use of distributed temperature sen
   		<p>Fig. 10. t-SNE Graph of the Classified Dataset Over the CNN Training Epoch.</p>
 	</div>	
 
+	T-sne models the probability distribution of pairwise similarities between data points in the high-dimensional space and the low-dimensional space, and minimizes the divergence between these two probability distributions using gradient descent. 
+    
+
 Data is split to 7 to 3, training and testing respectively. Then the 7 is then split to training and validation on this training to prevent overfitting of the parameters which is weights and the biases. While the testing (3) makes sure Hyper parameters (width, depth, batch size of epochs) don’t overfit.
 
 
